@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    background: linear-gradient(to right, #f4f4f9, #e8ecf5);
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    background: linear-gradient(90deg, #000000, #000000);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.resume-content,
+.bio-content {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-content:hover,
+.bio-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #0078d7;
+    font-size: 2rem;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #333;
+    color: #f4f4f4;
+    font-size: 1rem;
+    border-top: 3px solid #0078d7;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        padding: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f4f4f9, #dbe2ef);
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #0f0f0f, #0056a8);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family:'Times New Roman', Times, serif:
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.resume-content, 
+.bio-content {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-content:hover, 
+.bio-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000000;
+    border-bottom: 2px solid #0078d7;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #000000;
+    margin-top: 1.5rem;
+}
+
+.skills span {
+    display: inline-block;
+    background: #0078d7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.skills span:hover {
+    background: #ffffff;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 4px solid #0078d7;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: white;
+}
+/* Highlight active navigation link */
+header nav a.active {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
